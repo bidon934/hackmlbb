@@ -1,0 +1,119 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Injector VVIP Mobile Legends
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Share Tech Mono', monospace;
+    }
+    .terminal::-webkit-scrollbar {
+      width: 8px;
+    }
+    .terminal::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    .terminal::-webkit-scrollbar-thumb {
+      background-color: #4ade80;
+      border-radius: 4px;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-green-400 min-h-screen flex flex-col items-center p-4">
+<audio autoplay loop hidden>
+  <source src="/assets/backsound.mp3" type="audio/mpeg" />
+</audio>
+<audio id="bgm" loop>
+  <source src="/assets/backsound.mp3" type="audio/mpeg" />
+</audio>  <div class="max-w-md w-full bg-gray-800 rounded-lg shadow-lg p-6">
+   <h1 class="text-3xl font-bold mb-6 text-center text-green-400">
+    Injector VVIP Mobile Legends
+   </h1>
+   <form class="space-y-5" id="injectorForm">
+    <div>
+     <label class="block mb-1 font-semibold text-green-300" for="accountId">
+      ID Akun
+     </label>
+     <input autocomplete="off" class="w-full rounded-md bg-gray-700 border border-green-600 focus:border-green-400 focus:ring-2 focus:ring-green-400 text-green-300 px-3 py-2 outline-none" id="accountId" inputmode="numeric" name="accountId" pattern="[0-9]+" placeholder="Masukkan ID Akun Mobile Legends" required title="Hanya angka" type="text"/>
+    </div>
+    <div>
+     <label class="block mb-1 font-semibold text-green-300" for="serverId">
+      ID Server
+     </label>
+     <input autocomplete="off" class="w-full rounded-md bg-gray-700 border border-green-600 focus:border-green-400 focus:ring-2 focus:ring-green-400 text-green-300 px-3 py-2 outline-none" id="serverId" inputmode="numeric" name="serverId" pattern="[0-9]+" placeholder="Masukkan ID Server Mobile Legends" required title="Hanya angka" type="text"/>
+    </div>
+    <div>
+     <p class="font-semibold mb-2 text-green-300">Pilih Cheat</p>
+     <div class="space-y-3">
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Unlimited Diamonds</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Unlimited Diamonds" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Unlock All Skins</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Unlock All Skins" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Anti Banned</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Anti Banned" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Unlimited Battle Points</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Unlimited Battle Points" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Map Hack</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Map Hack" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Drone View</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Drone View" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Lag 999ms</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Lag 999ms" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Auto Enemy Bot</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Auto Enemy Bot" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+      <label class="flex items-center space-x-3"><span class="text-green-300 flex-grow">Fake Titel Global</span><button aria-pressed="false" class="toggle-btn w-12 h-6 bg-gray-700 rounded-full relative focus:outline-none" data-cheat="Fake Titel Global" type="button"><span class="dot absolute left-1 top-1 w-4 h-4 bg-green-400 rounded-full transition-transform"></span></button></label>
+     </div>
+    </div>
+    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-3 rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed" id="startHackBtn" type="submit">
+     Mulai Hack
+    </button>
+   </form>
+  </div>
+  <div class="max-w-md w-full bg-black rounded-lg shadow-lg mt-8 p-4 font-mono text-green-400 text-sm overflow-y-auto terminal hidden" id="terminalContainer" style="height: 300px;">
+   <pre class="whitespace-pre-wrap" id="terminalOutput"></pre>
+  </div>
+  <div class="max-w-md w-full bg-green-900 rounded-lg shadow-lg mt-8 p-6 text-center text-green-200 text-xl font-semibold hidden" id="successMessage">
+   <p>Hack Berhasil! Mengalihkan ke game Mobile Legends...</p>
+   <video class="mx-auto mt-4 rounded-md shadow-lg" width="400" height="200" autoplay loop muted playsinline>
+     <source src="/assets/ml_video.mp4" type="video/mp4" />
+     Browser kamu tidak mendukung video.
+   </video>
+  </div>
+<script>
+function sleep(ms) { return new Promise(res => setTimeout(res, ms)); }
+async function typeLine(line, container, minDelay=30, maxDelay=60) {
+  for (let i=0; i<line.length; i++) {
+    container.textContent += line.charAt(i);
+    container.scrollTop = container.scrollHeight;
+    await sleep(minDelay + Math.random()*(maxDelay-minDelay));
+  }
+  container.textContent += "\n";
+  container.scrollTop = container.scrollHeight;
+}const fakeCodeLines = [ "function hackMobileLegends() {", "  const cheats = [", "    'Unlimited Diamonds',", "    'Unlock All Skins',", "    'Anti Banned',", "    'Unlimited Battle Points',", "    'Map Hack',", "    'Drone View',", "    'Lag 999ms',", "    'Auto Enemy Bot',", "    'Fake Titel Global'", "  ];", "  cheats.forEach(cheat => {", "    console.log(Activating ${cheat}...);", "  });", "  console.log('Injection complete.');", "}", "hackMobileLegends();", ];
+
+const randomCodeSnippets = [ "const diamondCount = 9999999;", "function unlockSkins() {", "  skins.forEach(skin => skin.unlocked = true);", "}", "while(true) {", "  monitorSecurity();", "  if (intrusionDetected()) {", "    activateAntiBan();", "  }", "  sleep(1000);", "}", "console.log('Injection successful');", "let battlePoints = 9999999;", "if (serverResponse === 'OK') {", "  grantRewards();", "}", "try {", "  hackServer();", "} catch(e) {", "  console.error(e);", "}", "await delay(500);", "process.exit(0);", ];
+
+const terminalHackLines = [ "Initializing hack engine...", "Bypassing Mobile Legends server security...", "Injecting cheat modules...", "Establishing secure connection to server...", "Encrypting payload...", "Uploading cheat scripts...", "Activating unlimited diamonds module...", "Unlocking all skins...", "Enabling anti banned protection...", "Generating unlimited battle points...", "Activating map hack...", "Enabling drone view...", "Enemy lag 999ms...", "Deploying auto enemy bot...", "Faking global title...", "Finalizing injection process...", "Cleaning up traces...", "Restarting game client...", "Connecting to Mobile Legends server...", "Hack process complete..." ];
+
+const bgm = document.getElementById("bgm"); function playBGM() { if (bgm.paused) bgm.play().catch(() => {}); }
+
+const toggleButtons = document.querySelectorAll('.toggle-btn'); toggleButtons.forEach(btn => { btn.addEventListener('click', () => { const pressed = btn.getAttribute('aria-pressed') === 'true'; btn.setAttribute('aria-pressed', String(!pressed)); const dot = btn.querySelector('.dot'); if (!pressed) { dot.classList.add('translate-x-6'); btn.classList.replace('bg-gray-700','bg-green-500'); } else { dot.classList.remove('translate-x-6'); btn.classList.replace('bg-green-500','bg-gray-700'); } }); });
+
+const form = document.getElementById('injectorForm'); const terminalContainer = document.getElementById('terminalContainer'); const terminalOutput = document.getElementById('terminalOutput'); const successMessage = document.getElementById('successMessage'); const startHackBtn = document.getElementById('startHackBtn');
+
+async function runFakeHackProcess() { terminalOutput.textContent = ""; terminalContainer.classList.remove("hidden"); successMessage.classList.add("hidden"); startHackBtn.disabled = true;
+
+for (let line of fakeCodeLines) { await typeLine(line, terminalOutput, 20, 40); await sleep(400); }
+
+for (let i = 0; i < 40; i++) { const line = randomCodeSnippets[Math.floor(Math.random() * randomCodeSnippets.length)]; await typeLine(line, terminalOutput, 20, 40); await sleep(150); }
+
+await sleep(700); terminalOutput.textContent = ""; await typeLine(">> Menjalankan terminal hack...\n", terminalOutput, 40, 80); await sleep(500);
+
+for (let line of terminalHackLines) { await typeLine(line, terminalOutput, 40, 80); await sleep(1000); }
+
+await typeLine("\n[+] Hack berhasil dijalankan.\n", terminalOutput, 10, 25); await sleep(1500);
+
+terminalContainer.classList.add("hidden"); successMessage.classList.remove("hidden"); await sleep(5000); window.location.href = "https://app.adjust.com/34cqh6a_tvv1g60?deeplink=mobilelegends://appinvites/mlr/whatsapp_10000"; }
+
+form.addEventListener("submit", e => { e.preventDefault(); playBGM(); const cheatOn = Array.from(toggleButtons).some(btn => btn.getAttribute("aria-pressed") === "true"); if (!cheatOn) { alert("Pilih minimal satu cheat untuk diaktifkan."); return; } runFakeHackProcess(); }); </script>
+
+</body>
+</html>
